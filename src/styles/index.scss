@@ -1,0 +1,103 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card-container{
+    padding: 20px;
+  justify-content: space-between;
+  margin-block: 20px;
+  display: flex;
+  gap: 5rem;
+  background: radial-gradient(circle at 100% 100%, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 18px, transparent 18px) 0% 0%/26px 26px no-repeat,
+    radial-gradient(circle at 0 100%, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 18px, transparent 18px) 100% 0%/26px 26px no-repeat,
+    radial-gradient(circle at 100% 0, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 18px, transparent 18px) 0% 100%/26px 26px no-repeat,
+    radial-gradient(circle at 0 0, rgba(255, 255, 255, 1) 0, rgba(255, 255, 255, 1) 18px, transparent 18px) 100% 100%/26px 26px no-repeat,
+    linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)) 50% 50%/calc(100% - 16px) calc(100% - 52px) no-repeat,
+    linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)) 50% 50%/calc(100% - 52px) calc(100% - 16px) no-repeat,
+    linear-gradient(90deg, #2b13b8 0%, #fff 40%, #ffffff 55%, #e04848 100%);
+  border-radius: 26px;
+  padding: 24px;
+  box-sizing: content-box;
+}
+
+.flag {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(48, 48, 48, 0.5);
+  }
+
+  .team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+    overflow: hidden;
+  }
+  .team-name {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 12em;
+  }
+
+  .vs{
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  .score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .team-score{
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  .button-container{
+    position: absolute;
+    gap:16px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    bottom: 10%;
+    padding: 16px;
+    background-color: #fff;
+  }
+  .button-score{
+    left:60%;
+  }
+
+  .select-container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap:8px;
+  }
+
+  button,select {
+    color: rgb(248, 233, 233);
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 1rem;
+    font-weight: 600;
+    border : 2px inset rgb(248, 233, 233);
+    padding: 8px;
+    background-color: rgb(29, 20, 20);
+  }
+
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
